@@ -822,8 +822,28 @@ ol, ul {
 .faq .section-title h2 {
   background: #e9f3dd;
 }
+
+
 .contact {
   background: #e1eaf3;
+}
+
+.cardcontact{
+  height: 200px;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.block{
+  height: 107px;
+  display: inline-block;
+  position: relative;
+}
+
+.block img{
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
 }
 
 .contact .info {

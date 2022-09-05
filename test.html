@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: orange;
+}
+
+.parentBlock{
+  display: flex;
+  gap: 30px;
+}
+
+.block{
+  background: purple;
+  position: relative;
+}
+
+.block img{
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.block img:nth-of-type(2){
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+
+.block img:nth-of-type(2):hover{
+  opacity: 1;
+}
+</style>
+<body>
+	<div class="parentBlock">
+    <div class="block">
+        <a href="/">
+            <img
+                src="https://st2.depositphotos.com/1011969/6070/i/950/depositphotos_60704945-stock-photo-number-1.jpg"
+                alt="image1"
+            />
+            <img
+                src="https://static8.depositphotos.com/1338574/829/i/450/depositphotos_8292993-stock-photo-the-number-2-in-gold.jpg?forcejpeg=true"
+                alt="image2"
+            />
+        </a>
+    </div>
+    <div class="block">
+        <a href="/">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/NYCS-bull-trans-3.svg/1200px-NYCS-bull-trans-3.svg.png"
+                alt="image3"
+            />
+            <img
+                src="https://static8.depositphotos.com/1338574/829/i/600/depositphotos_8293024-stock-photo-the-number-4-in-gold.jpg"
+                alt="image4"
+            />
+        </a>
+    </div>
+    <div class="block">
+        <a href="/">
+            <img
+                src="https://static8.depositphotos.com/1338574/829/i/600/depositphotos_8292996-stock-photo-the-number-5-in-gold.jpg"
+                alt="image5"
+            />
+            <img
+                src="https://st.depositphotos.com/1001311/3411/i/600/depositphotos_34119663-stock-photo-3d-golden-number-collection-6.jpg"
+                alt="image6"
+            />
+        </a>
+    </div>
+</div>
+</body>
+</html>
